@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter year" id="year">
+    <button id="press" onclick="Press()">Tinh ket qua</button>
+    <p id="output"></p>
+</body>
+</html>
+<script>
+    function Press(){
+        let year = +document.getElementById("year").value;
+        let result;
+        if (year % 4 ==0) {
+            result = "chan";
+        }else{
+            result = "le"
+        }
+    let display = "Nam " + year + " la nam " + result;
+    document.getElementById("output").innerHTML = display;
+    }
+</script>
