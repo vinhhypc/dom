@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhap so</p>
+    <input type="number" placeholder="Nhap so" id="number" >
+    <button onclick="Check()">Kiem tra</button>
+</body>
+</html>
+<script>
+    function Check() {
+        let check = +document.getElementById("number").value;
+        if (check % 2 == 1 ){
+            alert(" So ban nhap vao la le");
+        }else{
+            alert("So ban nhap vao la chan");
+        }
+    }
+</script>
